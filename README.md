@@ -4,7 +4,7 @@
 
 Sukkar Toolbox is a web app offering a variety of online tools to simplify everyday tasks.
 Whether you are coding, manipulating images/videos, PDFs or crunching numbers, Sukkar Toolbox has you covered.
-Live at [tools.sukkarshop.com](https://tools.sukkarshop.com).
+Live at [tools2.sukkarshop.com](https://tools2.sukkarshop.com).
 
 All files are processed entirely on the client side: nothing ever leaves your device.
 
