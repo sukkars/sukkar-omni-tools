@@ -76,3 +76,4 @@ GEMINI.md
 .cursor/active-context.md
 .brainsync/*
 .mcp.json*
+.vscode/*
