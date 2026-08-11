@@ -45,6 +45,9 @@ dist.zip
 
 error.txt
 
+# IDE
+.idea/
+
 # Auto-generated agent rules (personalized per developer)
 .brainsync/agent-rules.md
 

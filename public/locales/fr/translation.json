@@ -94,7 +94,10 @@
       "splitText": "Diviser un texte",
       "trimVideo": "Découper la vidéo"
     },
-    "searchPlaceholder": "Rechercher tous les outils",
+    "search": {
+      "noResult": "Aucun résultat trouvé, essayez d'ajuster votre recherche ou vos critères de filtre",
+      "placeholder": "Rechercher tous les outils"
+    },
     "title": "Faites avancer les choses rapidement avec"
   },
   "inputFooter": {
@@ -226,9 +229,9 @@
     "result": "Résultat"
   },
   "toolMultipleInput": {
+    "deleteFile": "Supprimer le fichier",
     "inputTitle": "Entrée {{type}}",
-    "noFilesSelected": "Aucun fichier sélectionné",
-    "deleteFile": "Supprimer le fichier"
+    "noFilesSelected": "Aucun fichier sélectionné"
   },
   "toolOptions": {
     "title": "Options d'outils"
