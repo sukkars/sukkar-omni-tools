@@ -5,8 +5,6 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from 'assets/logo.png';
-import logoWhite from 'assets/logo-white.png';
 import {
   Drawer,
   List,
@@ -16,7 +14,8 @@ import {
   Stack,
   Select,
   MenuItem,
-  FormControl
+  FormControl,
+  Typography
 } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
@@ -45,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({
   mode,
   onChangeMode: onChangeMode
 }) => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const navigate = useNavigate();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -110,40 +109,7 @@ const Navbar: React.FC<NavbarProps> = ({
             ? 'ic:round-light-mode'
             : 'ic:round-contrast'
       }
-    />,
-    <Icon
-      onClick={() => window.open('https://discord.gg/SDbbn3hT4b', '_blank')}
-      style={{ cursor: 'pointer' }}
-      fontSize={30}
-      icon={'ic:baseline-discord'}
-    />,
-    <iframe
-      src="https://ghbtns.com/github-btn.html?user=iib0011&repo=omni-tools&type=star&count=true&size=large"
-      frameBorder="0"
-      scrolling="0"
-      width="150"
-      height="30"
-      title="GitHub"
-    ></iframe>,
-    <Button
-      onClick={() => {
-        window.open(
-          'https://drive.google.com/file/d/1-r9-rDYnDJic9dnDywKTAsueehIAVp5F/view?usp=sharing',
-          '_blank'
-        );
-      }}
-      sx={{ borderRadius: '100px' }}
-      variant={'contained'}
-      startIcon={
-        <Icon
-          style={{ cursor: 'pointer' }}
-          fontSize={25}
-          icon={'hugeicons:job-search'}
-        />
-      }
-    >
-      {t('navbar.hireMe')}
-    </Button>
+    />
   ];
   const drawerList = (
     <List>
@@ -178,11 +144,22 @@ const Navbar: React.FC<NavbarProps> = ({
           mx: { md: '50px', lg: '150px' }
         }}
       >
-        <Link to="/">
-          <img
-            src={theme.palette.mode === 'light' ? logo : logoWhite}
-            width={isMobile ? '120px' : '200px'}
-          />
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <Stack direction={'row'} spacing={1} alignItems={'center'}>
+            <Icon
+              icon={'mdi:tools'}
+              fontSize={isMobile ? 26 : 32}
+              color={theme.palette.primary.main}
+            />
+            <Typography
+              fontWeight={700}
+              fontSize={isMobile ? 18 : 24}
+              color={'text.primary'}
+              sx={{ letterSpacing: '-0.02em' }}
+            >
+              Sukkar Toolbox
+            </Typography>
+          </Stack>
         </Link>
         {isMobile ? (
           <>

@@ -44,3 +44,32 @@ dist.zip
 .qodo
 
 error.txt
+
+# Auto-generated agent rules (personalized per developer)
+.brainsync/agent-rules.md
+
+# Auto-generated AI agent exclusions
+.cursorrules
+.clineRules
+.windsurfrules
+.gemini/
+.cline/
+.agent/
+.agents/
+.agent-mem/
+.cursor/
+.brainsync/
+.kiro/
+
+AGENT.md
+CLAUDE.md
+
+# Auto-generated AI agent exclusions
+AGENTS.md
+MEMORY.md
+GEMINI.md
+.windsurf/
+.clinerules
+.cursor/active-context.md
+.brainsync/*
+.mcp.json*
